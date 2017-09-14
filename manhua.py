@@ -2,7 +2,7 @@ import urllib.request,os
 import re
 from bs4 import BeautifulSoup
 def get_each_comic_url(url):
-    #page=urllib.request.urlopen(url）headers={'User-Agent': 'Mozilla/5.0'})
+    
     page = urllib.request.Request(url,headers={'User-Agent': 'Mozilla/5.0'})
 
     html=urllib.request.urlopen(page).read()
@@ -24,16 +24,13 @@ def get_url_list(http):
     return urlist
 
 '''
-#http = 'http://www.uuumh.com/shaonv/2016/0513/605.html'
-http = 'http://www.uuumh.com/shaonv/2016/1219/4118.html'
-urlist = get_url_list(http)
-i = 0
+
 '''
 os.mkdir('gouis')
 os.chdir(os.path.join(os.getcwd(), 'gouis'))
 '''
 for li in urlist:   
-    url = 'http://www.uuumh.com/shaonv/2016/1219/'+li[6:-1]  
+    url = 
     try:
         url_com = get_each_comic_url(url)[0]
         urllib.request.urlretrieve(url_com, str(i)+'.jpg')
@@ -42,11 +39,10 @@ for li in urlist:
         print('get_error')
 
     i+=1
-<div id="gallery-1" class="gallery galleryid-39327 gallery-columns-4 gallery-size-thumbnail"><dl class="gallery-item">
-<dt class="gallery-icon landscape">
+
 '''
 i = 0
-url_comcis = get_each_comic_url('https://svscomics.com/download/379497/glassfish-siterip-full-complete')
+url_comcis = get_each_comic_url()
 for coms in url_comcis:
     #print(coms)
     
@@ -72,6 +68,3 @@ for coms in url_comcis:
         print('get_error')
     i+=1
 
-#<img src="http://img61.imagetwist.com/th/10818/5o6eltfcgo0e.jpg" title="Perfect  mother's natural big tits get fucked by son's cock in [Yanagawa Rio] Mamapai">
-
-#<div class="preview-row">
